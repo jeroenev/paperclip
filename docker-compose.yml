@@ -27,7 +27,7 @@ services:
       PAPERCLIP_DEPLOYMENT_EXPOSURE: "private"
       PAPERCLIP_PUBLIC_URL: "${PAPERCLIP_PUBLIC_URL:-http://localhost:3100}"
     volumes:
-      - /volume1/Docker/paperclip:/paperclip
+      - /volume1/docker/paperclip:/paperclip
     depends_on:
       db:
         condition: service_healthy
